@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Penfold: Photshoot With Adrian McNab</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <!--Bootstrap Files-->
+                <link href = "css/bootstrap.min.css" rel = "stylesheet">
+                <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src = "js/bootstrap.js"></script>
+
+
+
+                <!--Other Files-->
+                <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+                <!--My Loading Scripts-->
+
+                <!--Loads the footer div-->       
+                <script> 
+                $(function(){
+                  $("#footer").load("footerTemplate.html"); 
+                });
+                </script>
+
+                <!--Loads the cookie warning div-->       
+                <script> 
+                $(function(){
+                  $("#cookieLoad").load("cookieWarning.html"); 
+                });
+                </script> 
+
+                <!--Loads the mailing list div-->       
+                <script> 
+                $(function(){
+                  $("#mailingListModal").load("MailingListModal.html"); 
+                });
+                </script> 
+
+                <!--My External Scripts-->       
+
+                <!--<script src = "js/javascript.js"></script>-->
+                <script src = "js/cookie.js"></script>
+                <script src = "js/photoAlbum.js"> </script>
+                <link href = "css/styles.css" rel = "stylesheet">
+
+        </head>
+        <body>
+                <!--Start of Top Navbar-->
+                <div class = "navbar navbar-custom navbar-static-top">
+
+                        <div class = "container">
+                               
+                                <a class="navbar-brand" rel="home" href="index.html" title="Penfold" height = "80px">
+                                <img class = "img-responsive" src="img/Header.png" height = "100%">
+                                </a>
+                               
+                                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                </button>
+                               
+                                <div class = "collapse navbar-collapse navHeaderCollapse">
+                               
+                                        <ul class = "nav navbar-nav navbar-right" id = "customFontHere">
+                                       
+                                                <li><a href = "index.html" class = "active">Home</a></li>
+                                                <li><a href = "NewsOverview.html">News</a></li>
+                                                <li><a href = "about.html">About</a></li>
+                                                <li><a href = "Tour.html">Tour</a></li>
+                                                <li><a href = "music.html">Music</a></li>
+                                                <li><a href = "http://www.penfoldband.bigcartel.com/">Store</a></li>
+                                                <li><a href = "#mailingList" data-toggle="modal">Mailing List</a></li>
+                                                <li><a href="http://www.twitter.com/penfoldbanduk"><span class="fa fa-twitter"></span></a>
+                                                <li><a href="http://www.facebook.com/penfoldband"><span class="fa fa-facebook"></span></a>
+                                                
+                                        </ul>
+                               
+                                </div>
+                               
+                        </div>
+                </div>
+                <!--End of Top Navbar-->
+
+                 <!--Start Of Cookie Warning ****Requires hooking up to other stuff.-->
+                 <div id = "cookieLoad"></div>
+                <!--End Of Cookie Warning.-->
+
+
+                <!--Start Of Page Header.-->
+                <div class = "container">
+                    <div class ="page-header" id = "customFontHere">
+                        <h1>Photoshoot with Adrian McNab</h1>
+                    </div>
+                </div>
+                <!--End Of Page Header.-->
+
+                <div class = "container" style="text-align:center; padding-bottom:10px;">
+                    <button class="btn btn-custom btn-lg" data-toggle="modal" data-target="#photoModal" id = "playPhotoAlbum">
+                      <span class="glyphicon glyphicon-play-circle"></span>  Slideshow
+                    </button>
+                    <br/>
+                </div>
+
+                <div class = "container">
+
+                    <div class = "row">
+
+                            <div class = "photoThumbnail"  id = "photo1">
+                                    <img src="img/woodsShoot/thumbs/1.jpg" class = "photoThumb">
+                                    <p>
+                                            <span class = "glyphicon glyphicon-zoom-in"></span>
+                                              Enlarge
+                                    </p>
+                            </div>
+
+                            <div class = "photoThumbnail" id = "photo2">
+                                    <img src="img/woodsShoot/thumbs/2.jpg" class = "photoThumb" >
+                                    <p>
+                                            <span class = "glyphicon glyphicon-zoom-in"></span>
+                                              Enlarge
+                                    </p>
+                            </div>
+
+                            <div class = "photoThumbnail" id = "photo3">
+                                    <img src="img/woodsShoot/thumbs/3.jpg" class = "photoThumb" >
+                                    <p>
+                                            <span class = "glyphicon glyphicon-zoom-in"></span>
+                                              Enlarge
+                                    </p>
+                            </div>
+
+                            <div class = "photoThumbnail" id = "photo5">
+                                    <img src="img/woodsShoot/thumbs/5.jpg" class = "photoThumb">
+                                    <p>
+                                            <span class = "glyphicon glyphicon-zoom-in"></span>
+                                               Enlarge
+                                    </p>
+                            </div>
+
+                            <div class = "photoThumbnail" id = "photo4">
+                                    <img src="img/woodsShoot/thumbs/4.jpg" class = "photoThumb">
+                                    <p>
+                                            <span class = "glyphicon glyphicon-zoom-in"></span>
+                                               Enlarge
+                                    </p>
+                            </div>
+
+
+                            <div class = "photoThumbnail"  id = "photo6">
+                                    <img src="img/woodsShoot/thumbs/6.jpg" class = "photoThumb">
+                                    <p>
+                                            <span class = "glyphicon glyphicon-zoom-in"></span>
+                                               Enlarge
+                                    </p>
+                            </div>
+
+                            <div class = "photoThumbnail" id = "photo7">
+                                    <img src="img/woodsShoot/thumbs/7.jpg" class = "photoThumb" >
+                                    <p>
+                                            <span class = "glyphicon glyphicon-zoom-in"></span>
+                                               Enlarge
+                                    </p>
+                            </div>
+
+                            <div class = "photoThumbnail" id = "photo8">
+                                    <img src="img/woodsShoot/thumbs/8.jpg" class = "photoThumb">
+                                    <p>
+                                            <span class = "glyphicon glyphicon-zoom-in"></span>
+                                               Enlarge
+                                    </p>
+                            </div>
+
+                            <div class = "photoThumbnail" id = "photo9">
+                                    <img src="img/woodsShoot/thumbs/9.jpg" class = "photoThumb" >
+                                    <p>
+                                            <span class = "glyphicon glyphicon-zoom-in"></span>
+                                               Enlarge
+                                    </p>
+                            </div>
+
+                            <div class = "photoThumbnail" id = "photo10">
+                                    <img src="img/woodsShoot/thumbs/10.jpg" class = "photoThumb">
+                                    <p>
+                                            <span class = "glyphicon glyphicon-zoom-in"></span>
+                                               Enlarge
+                                    </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--Start of Photo Modal-->
+
+                <div class = "modal photoModal fade" role = "dialog" data-keyboard = "true" id = "photoModal" tabindex="-1">
+
+                    <div class = "modal-dialog">
+
+                        <div class = "modal-content" id = "photoModal">
+
+                            <div class = "modal-body">
+
+                                <div id="photoCarousel" class="carousel slide" data-ride="carousel">
+
+                                  <!-- Indicators -->
+                                  <ol class="carousel-indicators">
+
+                                    <li data-target="#photoCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#photoCarousel" data-slide-to="1"></li>
+                                    <li data-target="#photoCarousel" data-slide-to="2"></li>
+                                    <li data-target="#photoCarousel" data-slide-to="3"></li>
+                                    <li data-target="#photoCarousel" data-slide-to="4"></li>
+                                    <li data-target="#photoCarousel" data-slide-to="5"></li>
+                                    <li data-target="#photoCarousel" data-slide-to="6"></li>
+                                    <li data-target="#photoCarousel" data-slide-to="7"></li>
+                                    <li data-target="#photoCarousel" data-slide-to="8"></li>
+                                    <li data-target="#photoCarousel" data-slide-to="9"></li>
+
+                                  </ol>
+
+                                  <!-- Wrapper for slides -->
+                                  <div class="carousel-inner">
+
+                                    <div class="item photoItem active" >
+
+                                        <img src="img/WoodsShoot/1.jpg" alt="..." class = "albumImage" id = "albumImage">
+
+                                    </div>
+
+                                    <div class="item photoItem">
+
+                                      <img src="img/WoodsShoot/2.jpg" alt="..." class = "albumImage" id = "albumImage" >
+
+                                    </div>
+
+                                    <div class="item photoItem">
+
+                                      <img src="img/WoodsShoot/3.jpg" alt="..." class = "albumImage" id = "albumImage">
+
+                                    </div>
+                                    <div class="item photoItem">
+
+                                      <img src="img/WoodsShoot/4.jpg" alt="..." class = "albumImage" id = "albumImage">
+
+                                    </div>
+                                    <div class="item photoItem">
+
+                                      <img src="img/WoodsShoot/5.jpg" alt="..." class = "albumImage" id = "albumImage">
+
+                                    </div>
+                                    <div class="item photoItem">
+
+                                      <img src="img/WoodsShoot/6.jpg" alt="..." class = "albumImage" id = "albumImage">
+
+                                    </div>
+                                    <div class="item photoItem">
+
+                                      <img src="img/WoodsShoot/7.jpg" alt="..." class = "albumImage" id = "albumImage">
+
+                                    </div>
+                                    <div class="item photoItem">
+
+                                      <img src="img/WoodsShoot/8.jpg" alt="..." class = "albumImage" id = "albumImage">
+
+                                    </div>
+                                    <div class="item photoItem">
+
+                                      <img src="img/WoodsShoot/9.jpg" alt="..." class = "albumImage" id = "albumImage">
+
+                                    </div>
+                                    <div class="item photoItem">
+
+                                      <img src="img/WoodsShoot/10.jpg" alt="..." class = "albumImage" id = "albumImage">
+
+                                    </div>
+
+
+                                  </div>
+
+                                  <!-- Controls -->
+                                    <a class="left carousel-control" href="#photoCarousel" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a>
+                                    <a class="right carousel-control" href="#photoCarousel" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class = "modal-footer">
+                                    <span text-centered> 
+                                        <button type="button" class="btn btn-default" id = "playPauseButton"><span class = "glyphicon glyphicon-pause"></span>  Pause</button>
+                                    </span>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--End of Photo Modal-->
+
+
+                <!--Start of Footer-->
+                <div id = "footer"></div>
+                <!--End of Footer-->
+
+                <!--Start of Mailing List Modal-->
+                <div id = "mailingListModal"></div>
+                <!--End of Mailing List Modal-->
+
+        </body>
+</html>

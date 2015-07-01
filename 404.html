@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Penfold: Home</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <!--Bootstrap Files-->
+                <link href = "css/bootstrap.min.css" rel = "stylesheet">
+                <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src = "js/bootstrap.js"></script>
+
+                <!--Other Files-->
+                <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+                <!--My Loading Scripts-->
+
+                <!--Loads the footer div-->       
+                <script> 
+                $(function(){
+                  $("#footer").load("footerTemplate.html"); 
+                });
+                </script>
+
+
+                <!--My External Scripts-->       
+
+                <script src = "js/javascript.js"></script>
+                <script src = "js/cookie.js"></script>
+                <script src = "js/404.js"></script>
+
+                <link href = "css/styles.css" rel = "stylesheet">
+
+        </head>
+
+        <body>
+
+             <div class = "navbar navbar-custom navbar-static-top">
+
+                        <div class = "container">
+                               
+                                <a class="navbar-brand" rel="home" href="index.html" title="Penfold" height = "80px">
+                                <img class = "img-responsive" src="img/Header.png" height = "100%">
+                                </a>
+                               
+                                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                </button>
+                               
+                                <div class = "collapse navbar-collapse navHeaderCollapse">
+                               
+                                        <ul class = "nav navbar-nav navbar-right" id = "customFontHere">
+                                       
+                                                <li><a href = "index.html" class = "active">Home</a></li>
+                                                <li><a href = "NewsOverview.html">News</a></li>
+                                                <li><a href = "about.html">About</a></li>
+                                                <li><a href = "shows.html">Shows</a></li>
+                                                <li><a href = "music.html">Music</a></li>
+                                                <li><a href = "http://www.penfoldband.bigcartel.com/">Store</a></li>
+                                                <!--<li><a href = "#mailingList" data-toggle="modal">Mailing List</a></li>-->
+                                                <li><a href = "contactUs.html">Contact Us</a></li>
+                                                <li><a href="http://www.twitter.com/penfoldbanduk"><span class="fa fa-twitter"></span></a>
+                                                <li><a href="http://www.facebook.com/penfoldband"><span class="fa fa-facebook"></span></a>
+                                                
+                                        </ul>
+                               
+                                </div>
+                               
+                        </div>
+                </div>
+
+
+            <div class = "container">
+
+                <div class = "row text-center">
+
+                    <h1 align="center" style ="color: white; font-size: 50px" id = "customFontHere" >404 Error: Oh no, Something's gone wrong!</h1>
+                    
+                    <div id = "replaceImg" width = "100%">
+                        <img src="img/WoodsShoot/" class = "img-responsive center-block" style="max-height: 50%;" align="center">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--Start of Footer-->
+            <div id = "footer"></div>
+            <!--End of Footer-->
+
+ 
+               
+        </body>
+</html>

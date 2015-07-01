@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Penfold: Music</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <!--Bootstrap Files-->
+                <link href = "css/bootstrap.min.css" rel = "stylesheet">
+                <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src = "js/bootstrap.js"></script>
+
+
+
+                <!--Other Files-->
+                <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+                <!--My Loading Scripts-->
+
+                <!--Loads the footer div-->       
+                <script> 
+                $(function(){
+                  $("#footer").load("footerTemplate.html"); 
+                });
+                </script>
+
+                <!--Loads the cookie warning div-->       
+                <script> 
+                $(function(){
+                  $("#cookieLoad").load("cookieWarning.html"); 
+                });
+                </script> 
+
+                <!--Loads the mailing list div-->       
+                <script> 
+                $(function(){
+                  $("#mailingListModal").load("MailingListModal.html"); 
+                });
+                </script> 
+
+                <!--My External Scripts-->       
+
+                <script src = "js/javascript.js"></script>
+                <script src = "js/cookie.js"></script>
+                <link href = "css/styles.css" rel = "stylesheet">
+
+        </head>
+        <body>
+
+                <!--Start of Top Navbar-->
+                <div class = "navbar navbar-custom navbar-static-top">
+
+                        <div class = "container">
+                               
+                                <a class="navbar-brand" rel="home" href="index.html" title="Penfold" height = "80px">
+                                <img class = "img-responsive" src="img/Header.png" height = "100%">
+                                </a>
+                               
+                                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                        Menu
+                                </button>
+                               
+                                <div class = "collapse navbar-collapse navHeaderCollapse">
+                               
+                                        <ul class = "nav navbar-nav navbar-right" id = "customFontHere">
+                                       
+                                                <li><a href = "index.html">Home</a></li>
+                                                <li><a href = "NewsOverview.html">News</a></li>
+                                                <li><a href = "about.html">About</a></li>
+                                                <li><a href = "shows.html">Shows</a></li>
+                                                <li><a href = "music.html" class = "active">Music</a></li>
+                                                <li><a href = "http://www.penfoldband.bigcartel.com/">Store</a></li>
+                                                <!--<li><a href = "#mailingList" data-toggle="modal">Mailing List</a></li>-->
+                                                <li><a href = "contactUs.html">Contact Us</a></li>
+                                                <li><a href="http://www.twitter.com/penfoldbanduk"><span class="fa fa-twitter"></span></a>
+                                                <li><a href="http://www.facebook.com/penfoldband"><span class="fa fa-facebook"></span></a>
+                                                
+                                        </ul>
+                               
+                                </div>
+                               
+                        </div>
+                </div>
+                <!--End of Top Navbar-->
+
+                 <!--Start Of Cookie Warning ****Requires hooking up to other stuff.-->
+                 <div id = "cookieLoad"></div>
+                <!--End Of Cookie Warning.-->
+
+                <!--Start Of Page Header.-->
+                <div class = "container">
+                    <div class ="page-header" id = "customFontHere">
+                        <h1> Discography</h1>
+                    </div>
+                </div>
+                <!--End Of Page Header.-->
+
+                <!--Start of page body-->
+
+                <div class = "container">
+                        <div class = "row">
+
+                                <div class = "col-lg-4">
+
+                                        <div class = "panel panel-default about-panel">
+
+                                                <div class = "panel-body">
+
+                                                    <div class = "albumArt">
+
+                                                        <a href="#hindsiteModal" data-toggle = "modal">
+                                                            <img src="img/discographyPics/heind.jpg" class = "img-responsive img-discography"></a>
+                                                            <p>
+                                                                <a href="#hindsiteModal" data-toggle = "modal">
+                                                                    <span class = "glyphicon glyphicon-play"></span>
+                                                                    </br>
+                                                                    Listen Now!
+                                                                </a>
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <table class = "table">
+                                                        <tr>
+                                                            <td><h4> Hindsight & Regrets </h4></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Released:</td>
+                                                            <td align="right">01/06/2012</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>iTunes:</td>
+                                                            <td align="right">Not available</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bandcamp:</td>
+                                                            <td align="right"><a href="http://penfold.bandcamp.com/album/hindsight-regrets">Here</a></td>
+                                                        </tr>
+                                                    </table>
+
+                                                        <h4>Track List</h4>
+
+                                                            <ol>
+                                                                <li>Just One Day</li>
+                                                                <li>Echoes</li>
+                                                                <li>After This Night</li>
+                                                                <li>Before We Fall</li>
+                                                            </ol>
+
+                                                </div>
+
+                                        </div>
+
+                                </div>
+
+
+                                <div class = "col-lg-4">
+
+                                        <div class = "panel panel-default">
+
+                                                <div class = "panel-body">
+
+                                                    <div class = "albumArt">
+
+                                                        <a href="#exactlyModal" data-toggle = "modal">
+                                                            <img src="img/discographyPics/exactly.jpg" class = "img-responsive img-discography">
+                                                            <p>
+                                                                <a href="#exactlyModal" data-toggle = "modal">
+                                                                    <span class = "glyphicon glyphicon-play"></span>
+                                                                    </br>
+                                                                    Listen Now!
+                                                                </a>
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <table class = "table">
+                                                        <tr>
+                                                            <th><h4> Exactly How It Happened </h4></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Released:</td>
+                                                            <td align="right">11/03/2013</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>iTunes:</td>
+                                                            <td align="right"><a href="https://itunes.apple.com/gb/album/exactly-how-it-happened-single/id657363749">Buy Here</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bandcamp:</td>
+                                                            <td align="right"><a href="http://penfold.bandcamp.com/album/hindsight-regrets">Here</a></td>
+                                                        </tr>
+                                                    </table>
+
+                                                        <h4>Track List</h4>
+
+                                                            <ol class = "">
+                                                                <li>Exactly How It Happened</li>
+                                                                <li>And The Beast</li>
+                                                            </ol>
+
+                                                </div>
+
+                                        </div>
+
+                                </div>
+
+                                <div class = "col-lg-4">
+
+                                        <div class = "panel panel-default about-panel">
+
+                                                <div class = "panel-body">
+
+                                                    <div class = "albumArt">
+
+                                                        <!--<a href="#lungsModal" data-toggle = "modal">-->
+                                                        <a href="lungAnnounce.html">
+
+
+                                                            <img src="img/discographyPics/lungs.png" class = "img-responsive img-discography">
+
+                                                            <p>
+                                                                <a href="#lungsModal" data-toggle = "modal">
+                                                                    <span class = "glyphicon glyphicon-play"></span>
+                                                                    </br>
+                                                                    Listen Now!
+                                                                </a>
+                                                                </a>
+                                                            </p>
+
+                                                        </a>
+
+                                                    </div>
+
+                                                    <table class = "table">
+                                                        <tr>
+                                                            <th><h4>Lungs</h4></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Released:</td>
+                                                            <td align="right">06/06/2014</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>iTunes:</td>
+                                                            <td align="right"><a href="https://t.co/XlfbwEFrhr">Buy Here</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bandcamp:</td>
+                                                            <td align="right"><a href="http://penfold.bandcamp.com/album/lungs">Here</a></td>
+                                                        </tr>
+                                                    </table>
+
+                                                        <h4>Track List</h4>
+
+                                                            <ol>
+                                                                <li>Sixth Sense</li>
+                                                                <li>Treading Water</li>
+                                                                <li>Once Young</li>
+                                                                <li>Rephrase/Rewind</li>
+                                                                <li>Northern Light</li>
+                                                            </ol>
+                                                </div>
+
+                                        </div>
+
+                                </div>
+
+                        </div>
+                </div>
+
+                <!--End of page body-->
+
+                <!--Start of Footer-->
+                <div id = "footer"></div>
+                <!--End of Footer-->
+
+                <!--Start of Mailing List Modal-->
+                <div id = "mailingListModal"></div>
+                <!--End of Mailing List Modal-->
+
+                <!--Start of Hindsight Modal-->
+
+                <div class = "modal bandcampModal fade" role = "dialog" id = "hindsiteModal">
+
+                    <div class = "modal-dialog">
+
+                        <div class = "modal-content" id = "bandcampModel">
+
+                            <div class = "modal-header">
+                            
+                                <button type="button" class="close" data-dismiss="modal"  style="color:white;">x</button>
+                                </br>
+
+                            </div>
+
+                            <div class = "modal-body">
+
+                                <iframe style="border: 0; width: 400px; height: 638px; position: center;" src="http://bandcamp.com/EmbeddedPlayer/album=2215121285/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless id = "bandcampPlayer"><a href="http://penfold.bandcamp.com/album/hindsight-regrets">Hindsight &amp; Regrets by Penfold</a></iframe>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--End of Hindsight Modal-->
+
+
+                <!--Start of Exactly Modal-->
+
+                <div class = "modal bandcampModal fade" role = "dialog" id = "exactlyModal">
+
+                    <div class = "modal-dialog">
+
+                        <div class = "modal-content" id = "bandcampModel">
+
+                            <div class = "modal-header">
+                            
+                                <button type="button" class="close" data-dismiss="modal" style="color:white;">x</button>
+                                </br>
+
+                            </div>
+
+                            <div class = "modal-body">
+
+                                <iframe style="border: 0; width: 400px; height: 650px;" src="http://bandcamp.com/EmbeddedPlayer/album=1554381819/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://penfold.bandcamp.com/album/exactly-how-it-happened">Exactly How It Happened by Penfold</a></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--End of Exactly Modal-->
+
+
+                <!--Start of Lungs Modal-->
+
+                <div class = "modal bandcampModal fade" role = "dialog" id = "lungsModal">
+
+                    <div class = "modal-dialog">
+
+                        <div class = "modal-content" id = "bandcampModel">
+
+                            <div class = "modal-header">
+                            
+                                <button type="button" class="close" data-dismiss="modal" style="color:white;">x</button>
+                                </br>
+
+                            </div>
+
+                            <div class = "modal-body">
+
+                                <iframe style="border: 0; width: 400px; height: 650px;" src="http://bandcamp.com/EmbeddedPlayer/album=1678904841/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://penfold.bandcamp.com/album/lungs">Lungs by PENFOLD</a></iframe>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--End of Lungs Modal-->
+ 
+               
+        </body>
+</html>

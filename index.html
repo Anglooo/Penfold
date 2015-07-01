@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Penfold: Home</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <!--Bootstrap Files-->
+                <link href = "css/bootstrap.min.css" rel = "stylesheet">
+                <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src = "js/bootstrap.js"></script>
+
+
+
+                <!--Other Files-->
+                <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+                
+
+                <!--My Loading Scripts-->
+
+                <!--Loads the footer div-->       
+                <script> 
+                $(function(){
+                  $("#footer").load("footerTemplate.html"); 
+                });
+                </script>
+
+                <!--Loads the cookie warning div-->       
+                <script> 
+                $(function(){
+                  $("#cookieLoad").load("cookieWarning.html"); 
+                });
+                </script> 
+
+                <!--Loads the mailing list div-->       
+                <script> 
+                $(function(){
+                  $("#mailingListModal").load("MailingListModal.html"); 
+                });
+                </script> 
+
+                <!--My External Scripts-->       
+
+                <script src = "js/javascript.js"></script>
+                <script src = "js/cookie.js"></script>
+                <link href = "css/styles.css" rel = "stylesheet">
+
+        </head>
+        <body>
+                <!--Start of Top Navbar-->
+                <div class = "navbar navbar-custom navbar-static-top">
+
+                        <div class = "container">
+                               
+                                <a class="navbar-brand" rel="home" href="index.html" title="Penfold" height = "80px">
+                                <img class = "img-responsive" src="img/Header.png" height = "100%">
+                                </a>
+                               
+                                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                </button>
+                               
+                                <div class = "collapse navbar-collapse navHeaderCollapse">
+                               
+                                        <ul class = "nav navbar-nav navbar-right" id = "customFontHere">
+                                       
+                                                <li><a href = "index.html" class = "active">Home</a></li>
+                                                <li><a href = "NewsOverview.html">News</a></li>
+                                                <li><a href = "about.html">About</a></li>
+                                                <li><a href = "shows.html">Shows</a></li>
+                                                <li><a href = "music.html">Music</a></li>
+                                                <li><a href = "http://www.penfoldband.bigcartel.com/">Store</a></li>
+                                                <!--<li><a href = "#mailingList" data-toggle="modal">Mailing List</a></li>-->
+                                                <li><a href = "contactUs.html">Contact Us</a></li>
+                                                <li><a href="http://www.twitter.com/penfoldbanduk"><span class="fa fa-twitter"></span></a>
+                                                <li><a href="http://www.facebook.com/penfoldband"><span class="fa fa-facebook"></span></a>
+                                                
+                                        </ul>
+                               
+                                </div>
+                               
+                        </div>
+                </div>
+                <!--End of Top Navbar-->
+
+                 <!--Start Of Cookie Warning ****Requires hooking up to other stuff.-->
+                 <div id = "cookieLoad"></div>
+                <!--End Of Cookie Warning.-->
+
+
+                <!--Start Of Page Header.-->
+                <div class = "container">
+                    <div class ="page-header" id = "customFontHere">
+                        <h1>Home</h1>
+                    </div>
+                </div>
+                <!--End Of Page Header.-->
+
+                <!--Start of Jumbotron-->
+                <div class = "container">
+
+                        <div class = "jumbotron" id = "mainJumbo">
+
+                                <div id = "penCarousel" class = "carousel slide">
+
+                                        <ol class = "carousel-indicators">
+                                                <li data-target = "#penCarousel" data-slide-to = "0" class = "active"></li>
+                                                <li data-target = "#penCarousel" data-slide-to = "1"></li>
+                                                <li data-target = "#penCarousel" data-slide-to = "2"></li>
+
+                                        </ol>
+
+                                        <div class = "carousel-inner" id = "customFontHere2" >     
+
+                                                        <div class = "item active jumboItem">
+                                                            <a href="lungAnnounce.html">
+                                                                <img src = "img/JumboPics/finalEpFrontJumbo.png" alt = "sample" class = "img-responsive jumboImage" href="lungAnnounce.html">
+                                                                <div class  ="carousel-caption">
+                                                                        <a href = "lungAnnounce.html" id = "customFontHere2">'Lungs' EP is out NOW!</a>
+                                                                </div>
+                                                            </a>
+                                                        </div>       
+
+                                                        <div class = "item jumboItem">
+                                                            <a href="http://youtu.be/l8iFM2A2VGY">
+                                                                <img src = "img/JumboPics/stillPlaceholder.png" alt = "sample" class = "img-responsive jumboImage">
+                                                                <div class  ="carousel-caption">
+                                                                        <a href="http://youtu.be/l8iFM2A2VGY" id = "customFontHere2">See our first ever video for the song 'Sixth Sense' from 'Lungs' here</a>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+
+                                                        <div class = "item jumboItem">
+                                                            <a href="launchGig.html">
+                                                                <img src = "img/JumboPics/launchPoster.jpg" alt = "sample" class = "img-responsive jumboImage">
+                                                                <div class  ="carousel-caption">
+                                                                        <a href="launchGig.html" id = "customFontHere2">'Lungs' EP launch show. 21-06-2014, Opium Edinburgh.</a>
+                                                                </div>
+                                                            </a>
+                                                        </div>         
+
+                                        </div>
+
+                                        <a class = "carousel-control left" href = "#penCarousel" data-slide = "prev">
+                                                <span class = "glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+
+                                        <a class = "carousel-control right" href = "#penCarousel" data-slide = "next">
+                                                <span class = "glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+
+                                </div>
+
+                        </div>
+                </div>
+ 
+                <!--End of Jumbo-->
+
+                <!--Start of Footer-->
+                <div id = "footer"></div>
+                <!--End of Footer-->
+
+                <!--Start of Mailing List Modal-->
+                <div id = "mailingListModal"></div>
+                <!--End of Mailing List Modal-->
+ 
+               
+        </body>
+</html>
